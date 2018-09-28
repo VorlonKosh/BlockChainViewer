@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BlockViewer</string>
+    <string name="start_text">Block Viewer</string>
+    <string name="show_raw_contents">Show Raw Transaction Contents</string>
+    <string name="hide_raw_contents">Hide Raw Transaction Contents</string>
+
+    <string name="block_item_producer">Producer: </string>
+
+</resources>

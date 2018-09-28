@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+
+
+    <TextView
+        android:id="@+id/block_id_detail_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/block_producer_detail_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/block_signature_detail_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/block_transaction_detail_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/trans_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <Button
+        android:id="@+id/view_raw_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:onClick="toggleRaw"
+        android:text="@string/show_raw_contents" />
+
+    <TextView
+        android:id="@+id/block_raw_content_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="raw data..........................."
+        android:textSize="12sp"
+        app:fontFamily="sans-serif"
+        android:visibility="invisible"/>
+
+</LinearLayout>
+
+</ScrollView>
